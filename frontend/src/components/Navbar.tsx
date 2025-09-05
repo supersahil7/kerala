@@ -6,10 +6,8 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '/', icon: Leaf },
-  { name: 'Schemes & Loans', href: '/schemes', icon: FileText },
-  { name: 'Agri Deals', href: '/deals', icon: Leaf },
-  { name: 'AI Assistant', href: '/chat', icon: MessageCircle },
-  { name: 'Legal Help', href: '/legal', icon: Scale },
+  { name: 'Market Access', href: '/deals', icon: Leaf },
+  { name: 'Legal Actions', href: '/legal', icon: Scale },
   { name: 'News', href: '/news', icon: Newspaper },
   { name: 'Weather Alerts', href: '/alerts', icon: AlertTriangle },
 ];

@@ -1,24 +1,24 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { ArrowRight, Leaf, Users, TrendingUp, Shield } from 'lucide-react';
+import { ArrowRight, Leaf, Users, TrendingUp, Shield, MessageCircle, Link as LinkIcon, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroImage from '@/assets/kerala-hero.jpg';
 
 const features = [
   {
-    icon: Leaf,
-    title: 'Smart Farming',
+    icon: MessageCircle,
+    title: 'AI Assistant',
     description: 'AI-powered agricultural solutions for better yields'
   },
   {
-    icon: Users,
-    title: 'Community Support',
-    description: 'Connect with fellow farmers and agricultural experts'
+    icon: FileText,
+    title: 'Government Schemes & Loans',
+    description: 'Access curated government schemes and loan options'
   },
   {
-    icon: TrendingUp,
-    title: 'Market Access',
-    description: 'Direct access to government schemes and market deals'
+    icon: LinkIcon,
+    title: 'DigiLocker Linking',
+    description: 'Securely link your DigiLocker for easy document access'
   },
   {
     icon: Shield,
