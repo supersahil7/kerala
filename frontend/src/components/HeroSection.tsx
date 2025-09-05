@@ -2,7 +2,6 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowRight, Leaf, Users, TrendingUp, Shield, MessageCircle, Link as LinkIcon, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroImage from '@/assets/kerala-hero.jpg';
 
 const features = [
   {
@@ -30,14 +29,16 @@ const features = [
 export function HeroSection() {
   return (
     <section className="min-h-screen bg-gradient-hero relative overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-40"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundBlendMode: 'multiply'
-        }}
-      />
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-40 transform scale-125 -translate-y-12"
+      >
+        <source src="/vidva.mp4" type="video/mp4" />
+      </video>
       
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-primary/30" />
