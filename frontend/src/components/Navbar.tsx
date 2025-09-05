@@ -58,10 +58,12 @@ export function Navbar() {
 
           {/* User Menu */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="outline" size="sm">
-              <User className="h-4 w-4 mr-2" />
-              Sign In
-            </Button>
+            <Link to="/signin">
+              <Button variant="outline" size="sm">
+                <User className="h-4 w-4 mr-2" />
+                Sign In
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -92,10 +94,12 @@ export function Navbar() {
                   );
                 })}
                 <div className="pt-4 border-t border-border">
-                  <Button className="w-full" size="lg">
-                    <User className="h-4 w-4 mr-2" />
-                    Sign In with Digilocker
-                  </Button>
+                  <Link to="/signin" onClick={() => setIsOpen(false)}>
+                    <Button className="w-full" size="lg">
+                      <User className="h-4 w-4 mr-2" />
+                      Sign In
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </SheetContent>

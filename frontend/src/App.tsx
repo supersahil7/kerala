@@ -12,6 +12,8 @@ import Legal from "./pages/Legal";
 import News from "./pages/News";
 import Alerts from "./pages/Alerts";
 import NotFound from "./pages/NotFound";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/legal" element={<Legal />} />
           <Route path="/news" element={<News />} />
           <Route path="/alerts" element={<Alerts />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
