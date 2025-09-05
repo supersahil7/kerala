@@ -1,15 +1,27 @@
-import { useState } from 'react';
-import { Menu, X, Leaf, User, MessageCircle, FileText, Scale, Newspaper, AlertTriangle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Link, useLocation } from 'react-router-dom';
+import { useState } from "react";
+import {
+  Menu,
+  X,
+  Leaf,
+  User,
+  MessageCircle,
+  FileText,
+  Scale,
+  Newspaper,
+  AlertTriangle,
+  BarChart3,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
-  { name: 'Home', href: '/', icon: Leaf },
-  { name: 'Market Access', href: '/deals', icon: Leaf },
-  { name: 'Legal Actions', href: '/legal', icon: Scale },
-  { name: 'News', href: '/news', icon: Newspaper },
-  { name: 'Weather Alerts', href: '/alerts', icon: AlertTriangle },
+  { name: "Home", href: "/", icon: Leaf },
+  { name: "Market Access", href: "/deals", icon: Leaf },
+  { name: "Legal Actions", href: "/legal", icon: Scale },
+  { name: "News", href: "/news", icon: Newspaper },
+  { name: "Weather Alerts", href: "/alerts", icon: AlertTriangle },
+  { name: "Dashboard", href: "/dashboard", icon: BarChart3 },
 ];
 
 export function Navbar() {
@@ -29,7 +41,9 @@ export function Navbar() {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-glow">Kerala AgriTech</h1>
-              <p className="text-xs text-muted-foreground">Smart India Hackathon</p>
+              <p className="text-xs text-muted-foreground">
+                Smart India Hackathon
+              </p>
             </div>
           </Link>
 
@@ -43,8 +57,8 @@ export function Navbar() {
                   to={item.href}
                   className={`flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all hover-lift ${
                     isActive(item.href)
-                      ? 'bg-primary text-primary-foreground shadow-glow'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                      ? "bg-primary text-primary-foreground shadow-glow"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
                   }`}
                 >
                   <Icon className="h-4 w-4 mr-2" />
@@ -82,8 +96,8 @@ export function Navbar() {
                       onClick={() => setIsOpen(false)}
                       className={`flex items-center px-4 py-3 rounded-lg text-base font-medium transition-all hover-lift ${
                         isActive(item.href)
-                          ? 'bg-primary text-primary-foreground shadow-glow'
-                          : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                          ? "bg-primary text-primary-foreground shadow-glow"
+                          : "text-muted-foreground hover:text-foreground hover:bg-muted"
                       }`}
                     >
                       <Icon className="h-5 w-5 mr-3" />
